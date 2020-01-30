@@ -4424,12 +4424,63 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "deact-frontend@workspace:."
   dependencies:
+    "@babel/core": 7.7.4
+    "@svgr/webpack": 4.3.3
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
+    "@typescript-eslint/eslint-plugin": ^2.8.0
+    "@typescript-eslint/parser": ^2.8.0
+    babel-eslint: 10.0.3
+    babel-jest: ^24.9.0
+    babel-loader: 8.0.6
+    babel-plugin-named-asset-import: ^0.3.5
+    babel-preset-react-app: ^9.1.0
+    camelcase: ^5.3.1
+    case-sensitive-paths-webpack-plugin: 2.2.0
+    css-loader: 3.2.0
+    dotenv: 8.2.0
+    dotenv-expand: 5.1.0
+    eslint: ^6.6.0
+    eslint-config-react-app: ^5.1.0
+    eslint-loader: 3.0.2
+    eslint-plugin-flowtype: 3.13.0
+    eslint-plugin-import: 2.18.2
+    eslint-plugin-jsx-a11y: 6.2.3
+    eslint-plugin-react: 7.16.0
+    eslint-plugin-react-hooks: ^1.6.1
+    file-loader: 4.3.0
+    fs-extra: ^8.1.0
+    html-webpack-plugin: 4.0.0-beta.5
+    identity-obj-proxy: 3.0.0
+    jest: 24.9.0
+    jest-environment-jsdom-fourteen: 0.1.0
+    jest-resolve: 24.9.0
+    jest-watch-typeahead: 0.4.2
+    mini-css-extract-plugin: 0.8.0
+    optimize-css-assets-webpack-plugin: 5.0.3
+    pnp-webpack-plugin: 1.5.0
+    postcss-flexbugs-fixes: 4.1.0
+    postcss-loader: 3.0.0
+    postcss-normalize: 8.0.1
+    postcss-preset-env: 6.7.0
+    postcss-safe-parser: 4.0.1
     react: ^16.12.0
+    react-app-polyfill: ^1.0.5
+    react-dev-utils: ^10.0.0
     react-dom: ^16.12.0
-    react-scripts: 3.3.0
+    resolve: 1.12.2
+    resolve-url-loader: 3.1.1
+    sass-loader: 8.0.0
+    semver: 6.3.0
+    style-loader: 1.0.0
+    terser-webpack-plugin: 2.2.1
+    ts-pnp: 1.1.5
+    url-loader: 2.3.0
+    webpack: 4.41.2
+    webpack-dev-server: 3.9.0
+    webpack-manifest-plugin: 2.2.0
+    workbox-webpack-plugin: 4.3.1
   languageName: unknown
   linkType: soft
 
@@ -5979,15 +6030,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-fsevents@2.1.2:
-  version: 2.1.2
-  resolution: "fsevents@npm:2.1.2"
-  dependencies:
-    node-gyp: latest
-  checksum: 0919165013a1dbea49f91a47af4c1f650ae356086db6335927a81eca0bdb994e25fb5c043e8b17fe85c50e856c7af48306c29149d4b3e898b8ed078827586981
-  languageName: node
-  linkType: hard
-
 fsevents@^1.2.7:
   version: 1.2.9
   resolution: "fsevents@npm:1.2.9"
@@ -5995,15 +6037,6 @@ fsevents@^1.2.7:
     nan: ^2.12.1
     node-pre-gyp: ^0.12.0
   checksum: ef553a8fe83b2870c53b2670454829c71329477684c7d0de4ef87702d880b27dcfbac8f9a4be83d00a8e07d3ce73ee2c5f892f45121c65d16afce3c6a21d8b9f
-  languageName: node
-  linkType: hard
-
-"fsevents@patch:fsevents@2.1.2#builtin<compat/fsevents>":
-  version: 2.1.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.2#builtin<compat/fsevents>::version=2.1.2&hash=e8cd9e"
-  dependencies:
-    node-gyp: latest
-  checksum: 6451c2e13977f67e69fb53a1734a04bcba523c7b854c8218ec1f9aa42a13462ecae37e9e74f8876db124f73105f1fd30d65ab77e0f7768878ba8b96380aca7d0
   languageName: node
   linkType: hard
 
@@ -11112,77 +11145,6 @@ fsevents@^1.2.7:
   version: 16.12.0
   resolution: "react-is@npm:16.12.0"
   checksum: 1cc13815109812213f5f1e15718551c2c4b3c164b447bd35ceba920dc268c5f0710617f12076d9b8100edd4a7e935f76bf19abe745068e387ff2670b3a3fdb0d
-  languageName: node
-  linkType: hard
-
-"react-scripts@npm:3.3.0":
-  version: 3.3.0
-  resolution: "react-scripts@npm:3.3.0"
-  dependencies:
-    "@babel/core": 7.7.4
-    "@svgr/webpack": 4.3.3
-    "@typescript-eslint/eslint-plugin": ^2.8.0
-    "@typescript-eslint/parser": ^2.8.0
-    babel-eslint: 10.0.3
-    babel-jest: ^24.9.0
-    babel-loader: 8.0.6
-    babel-plugin-named-asset-import: ^0.3.5
-    babel-preset-react-app: ^9.1.0
-    camelcase: ^5.3.1
-    case-sensitive-paths-webpack-plugin: 2.2.0
-    css-loader: 3.2.0
-    dotenv: 8.2.0
-    dotenv-expand: 5.1.0
-    eslint: ^6.6.0
-    eslint-config-react-app: ^5.1.0
-    eslint-loader: 3.0.2
-    eslint-plugin-flowtype: 3.13.0
-    eslint-plugin-import: 2.18.2
-    eslint-plugin-jsx-a11y: 6.2.3
-    eslint-plugin-react: 7.16.0
-    eslint-plugin-react-hooks: ^1.6.1
-    file-loader: 4.3.0
-    fs-extra: ^8.1.0
-    fsevents: 2.1.2
-    html-webpack-plugin: 4.0.0-beta.5
-    identity-obj-proxy: 3.0.0
-    jest: 24.9.0
-    jest-environment-jsdom-fourteen: 0.1.0
-    jest-resolve: 24.9.0
-    jest-watch-typeahead: 0.4.2
-    mini-css-extract-plugin: 0.8.0
-    optimize-css-assets-webpack-plugin: 5.0.3
-    pnp-webpack-plugin: 1.5.0
-    postcss-flexbugs-fixes: 4.1.0
-    postcss-loader: 3.0.0
-    postcss-normalize: 8.0.1
-    postcss-preset-env: 6.7.0
-    postcss-safe-parser: 4.0.1
-    react-app-polyfill: ^1.0.5
-    react-dev-utils: ^10.0.0
-    resolve: 1.12.2
-    resolve-url-loader: 3.1.1
-    sass-loader: 8.0.0
-    semver: 6.3.0
-    style-loader: 1.0.0
-    terser-webpack-plugin: 2.2.1
-    ts-pnp: 1.1.5
-    url-loader: 2.3.0
-    webpack: 4.41.2
-    webpack-dev-server: 3.9.0
-    webpack-manifest-plugin: 2.2.0
-    workbox-webpack-plugin: 4.3.1
-  peerDependencies:
-    typescript: ^3.2.1
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  bin:
-    react-scripts: ./bin/react-scripts.js
-  checksum: f7ff85f91b264c55c4208f8a8f9b9aaa733e7611a8e44ecbbaeac8f5c17770c8ed30cdc0e309032c612716c2f789f1582222ca9300e30820d0a8288bfb753693
   languageName: node
   linkType: hard
 
