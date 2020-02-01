@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -54,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000/',
+    'http://localhost:3000',
 ]
 
 ROOT_URLCONF = 'mysettings.urls'
@@ -63,7 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend', 'build')
+            os.path.join(ROOT_DIR, 'frontend', 'build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -78,7 +79,7 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'build', 'static')
+    os.path.join(ROOT_DIR, 'frontend', 'build', 'static')
 ]
 
 WSGI_APPLICATION = 'mysettings.wsgi.application'

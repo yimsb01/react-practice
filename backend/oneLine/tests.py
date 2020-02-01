@@ -1,9 +1,11 @@
 import os
 
 from django.test import TestCase
-from mysettings import settings
-# Create your tests here.
-if __name__ == '__main__':
-    print('==============')
-    print(os.path.join(settings.BASE_DIR, 'test'))
 
+# Create your tests here.
+from mysettings.settings import BASE_DIR
+
+if __name__ == '__main__':
+    print('--------------')
+    print(os.path.dirname(BASE_DIR))
+    print(os.path.join(os.path.dirname(BASE_DIR), 'frontend', 'build'))
