@@ -31,5 +31,5 @@ class HomeTemplateView(TemplateView):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', HomeTemplateView.as_view())
+    path('', HomeTemplateView.as_view(), name='home'),
 ]
