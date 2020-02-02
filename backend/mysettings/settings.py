@@ -34,9 +34,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
 ]
@@ -61,9 +64,10 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = [
-    os.path.join(ROOT_DIR, 'frontend', 'build', 'static')
-]
+# 개발용 static_dir
+# STATICFILES_DIRS = [
+#     os.path.join(ROOT_DIR, 'frontend', 'build', 'static')
+# ]
 
 WSGI_APPLICATION = 'mysettings.wsgi.application'
 
@@ -100,3 +104,5 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(ROOT_DIR, 'frontend', 'build', 'static')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
