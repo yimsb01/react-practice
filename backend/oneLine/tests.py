@@ -6,6 +6,10 @@ from django.test import TestCase
 from mysettings.settings import BASE_DIR
 
 if __name__ == '__main__':
-    print('--------------')
-    print(os.path.dirname(BASE_DIR))
-    print(os.path.join(os.path.dirname(BASE_DIR), 'frontend', 'build'))
+    dic = {
+        'a': 'answer a',
+        'b': 'answer b'
+    }
+
+    print(dic['a'])
+    print(dic.get('c'))
