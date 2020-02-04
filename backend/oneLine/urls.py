@@ -8,4 +8,5 @@ class HomeTemplateView(TemplateView):
 
 urlpatterns = [
     path('', HomeTemplateView.as_view(), name='home'),
+    path('<changed>/', HomeTemplateView.as_view(), name='changed')
 ]
